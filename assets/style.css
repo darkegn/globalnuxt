@@ -1,0 +1,71 @@
+/** Darkegn **/
+body {
+  background-color: #0c0c0c;
+  font-family: "Lato", sans-serif;
+}
+
+.bg-dark {
+  background-color: #0c0c0c !important;
+}
+
+.sliderTabs {
+  margin-top: 8vh;
+}
+.sliderTabs .nav-pills a.nav-link {
+  color: #555555;
+  margin-bottom: 3.2rem;
+}
+.sliderTabs .nav-pills a.nav-link.active {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+}
+.sliderTabs .sliderTitle {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+}
+.sliderTabs .btn-SliderButton {
+  background-color: #0f33ff;
+  width: 40%;
+  border-radius: 0;
+  color: white;
+  margin-top: 12vh;
+}
+.sliderTabs .btn-SliderButton:hover {
+  background-color: white;
+  color: black;
+}
+.sliderTabs .sliderCard {
+  padding: 10px;
+  margin-top: 1.5rem;
+  opacity: 0.2;
+  filter: gray();
+}
+.sliderTabs .sliderCard.active {
+  opacity: 1;
+  filter: none;
+}
+.sliderTabs .sliderCard.active .activeBar {
+  background-color: blue;
+}
+.sliderTabs .sliderCard .activeBar {
+  background-color: #5f5f63;
+  width: 50px;
+  display: block;
+  height: 5px;
+  margin-bottom: 1rem;
+}
+.sliderTabs .sliderCard .sliderCardTitle {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.sliderTabs .sliderCard .sliderCardContent p {
+  color: white;
+  margin-top: 1.1rem;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
