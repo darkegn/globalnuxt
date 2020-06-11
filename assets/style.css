@@ -41,7 +41,6 @@ body {
   padding: 10px;
   margin-top: 1.5rem;
   opacity: 0.2;
-  filter: gray();
 }
 .sliderTabs .sliderCard.active {
   opacity: 1;
@@ -66,6 +65,34 @@ body {
   color: white;
   margin-top: 1.1rem;
   font-size: 14px;
+}
+.sliderTabs .carousel .carousel-item {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.sliderTabs .carousel .carousel-item img {
+  filter: grayscale(1);
+}
+.sliderTabs .carousel .carousel-item input[type=radio] {
+  padding: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.sliderTabs .carousel .carousel-item input[type=radio]:checked + img {
+  filter: grayscale(0);
+}
+.sliderTabs .carousel .carousel-item .workTitle {
+  padding-top: 1.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.sliderTabs .carousel .carousel-item .workDescription {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

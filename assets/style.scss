@@ -54,27 +54,27 @@ body {
 
   .sliderCard {
     padding: 10px;
-    margin-top:1.5rem;
+    margin-top: 1.5rem;
     opacity: 0.2;
-    filter: gray();
 
-    &.active{
-      opacity:1;
+    &.active {
+      opacity: 1;
       filter: none;
 
-      .activeBar{
-        background-color:blue;
+      .activeBar {
+        background-color: blue;
       }
     }
 
-    .activeBar{
-      background-color:#5f5f63;
+    .activeBar {
+      background-color: #5f5f63;
       width: 50px;
       display: block;
       height: 5px;
       margin-bottom: 1rem;
 
     }
+
     .sliderCardTitle {
       font-size: 18px;
       color: white;
@@ -90,4 +90,45 @@ body {
     }
   }
 
-}
+  .carousel{
+
+    .carousel-item{
+      text-align:center;
+      padding-top:2.5rem;
+
+      img{
+        filter:grayscale(1);
+      }
+
+      input[type=radio]{
+        padding:0;
+        width:0;
+        height:0;
+        position:absolute;
+
+        &:checked{
+          + img{
+            filter:grayscale(0);
+          }
+        }
+
+      }
+
+      .workTitle {
+        padding-top:1.5rem;
+        color: white;
+        font-weight: bold;
+        font-size:18px;
+      }
+      .workDescription{
+        color: white;
+        font-weight:400;
+        font-size:16px;
+        margin-top:1.5rem;
+      }
+    }
+  }
+
+
+  }
+
