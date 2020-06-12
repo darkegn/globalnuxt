@@ -62,10 +62,27 @@ body {
   background-color: white;
   color: black;
 }
+.sliderTabs .btn-Career {
+  color: white;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+.sliderTabs .aboutCardRow {
+  margin-top: -12rem;
+}
+@media (max-width: 600px) {
+  .sliderTabs .aboutCardRow {
+    margin: 0 auto;
+  }
+}
 .sliderTabs .sliderCard {
   padding: 10px;
   margin-top: 1.5rem;
   opacity: 0.2;
+}
+.sliderTabs .sliderCard img {
+  border: 15px solid blue;
 }
 .sliderTabs .sliderCard.active {
   opacity: 1;
@@ -85,6 +102,12 @@ body {
   font-size: 18px;
   color: white;
   font-weight: bold;
+}
+.sliderTabs .sliderCard .sliderAboutCardTitle {
+  margin-top: -10px;
+  margin-left: 14px;
+  font-weight: bold;
+  color: white;
 }
 .sliderTabs .sliderCard .sliderCardContent p {
   color: white;

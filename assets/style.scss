@@ -85,10 +85,28 @@ body {
     }
   }
 
+  .btn-Career{
+    color:white;
+    font-weight:bold;
+    border:none;
+    background-color:transparent;
+  }
+
+  .aboutCardRow{
+    margin-top:-12rem;
+    @include m(){
+      margin: 0 auto;
+    }
+
+  }
   .sliderCard {
     padding: 10px;
     margin-top: 1.5rem;
     opacity: 0.2;
+
+    img{
+      border:15px solid blue;
+    }
 
     &.active {
       opacity: 1;
@@ -97,6 +115,8 @@ body {
       .activeBar {
         background-color: blue;
       }
+
+
     }
 
     .activeBar {
@@ -108,11 +128,21 @@ body {
 
     }
 
+
     .sliderCardTitle {
       font-size: 18px;
       color: white;
       font-weight: bold;
     }
+
+    .sliderAboutCardTitle{
+      margin-top:-10px;
+      margin-left:14px;
+      font-weight:bold;
+      color:white;
+    }
+
+
 
     .sliderCardContent {
       p {
