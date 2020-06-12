@@ -11,6 +11,14 @@ body {
 .sliderTabs {
   margin-top: 8vh;
 }
+.sliderTabs .sliderTabMenu {
+  display: block;
+}
+@media (max-width: 600px) {
+  .sliderTabs .sliderTabMenu {
+    display: none;
+  }
+}
 .sliderTabs .nav-pills a.nav-link {
   color: #555555;
   margin-bottom: 3.2rem;
@@ -26,12 +34,29 @@ body {
   font-size: 80px;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  .sliderTabs .sliderTitle {
+    font-size: 68px;
+  }
+}
+@media (max-width: 600px) {
+  .sliderTabs .sliderImg img {
+    width: 100%;
+  }
+}
 .sliderTabs .btn-SliderButton {
   background-color: #0f33ff;
   width: 40%;
   border-radius: 0;
   color: white;
   margin-top: 12vh;
+}
+@media (max-width: 600px) {
+  .sliderTabs .btn-SliderButton {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
 }
 .sliderTabs .btn-SliderButton:hover {
   background-color: white;

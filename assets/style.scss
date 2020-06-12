@@ -4,6 +4,12 @@ $primaryButtonColor: #0f33ff;
 $bgColor: #0c0c0c;
 $primaryFontFamily: 'Lato', sans-serif;
 
+@mixin m(){
+  @media (max-width:600px){
+    @content;
+  }
+}
+
 
 body {
   background-color: $bgColor;
@@ -16,6 +22,14 @@ body {
 
 .sliderTabs {
   margin-top: 8vh;
+
+  .sliderTabMenu{
+    display: block;
+
+    @include m(){
+      display:none;
+    }
+  }
 
   .nav-pills {
     a {
@@ -37,6 +51,19 @@ body {
     color: white;
     font-size: 80px;
     font-weight: bold;
+
+    @include m(){
+      font-size:68px;
+    }
+
+  }
+
+  .sliderImg{
+    img{
+      @include m(){
+        width:100%;
+      }
+    }
   }
 
   .btn-SliderButton {
@@ -45,6 +72,12 @@ body {
     border-radius: 0;
     color: white;
     margin-top: 12vh;
+
+    @include m(){
+      margin-top:2vh;
+      margin-bottom:5vh;
+      width:100%;
+    }
 
     &:hover {
       background-color: white;
