@@ -20,6 +20,47 @@ body {
   background-color: $bgColor !important;
 }
 
+
+nav{
+
+  #navTabMobile{
+
+      WIDTH: 100vw;
+      height: 100vh;
+      padding-top: 20vh;
+
+    a{
+      color:white;
+      text-align:center;
+
+      &.active{
+        font-size:20px;
+        background-color:transparent;
+    }
+    }
+
+  }
+
+  .navbar-collapse{
+    padding-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+    height: 100%;
+  }
+
+  button{
+    &:focus{
+      outline:none;
+    }
+  }
+  .navbar-toggler-icon{
+    background-image:url('img/menu.png') !important;
+    background-size: auto;
+  }
+}
+
+
 .sliderTabs {
   margin-top: 8vh;
 
@@ -67,7 +108,7 @@ body {
   }
 
   .btn-SliderButton {
-    background-color: #0f33ff;
+    background-color: $primaryButtonColor;
     width: 40%;
     border-radius: 0;
     color: white;
@@ -105,7 +146,7 @@ body {
     opacity: 0.2;
 
     img{
-      border:15px solid blue;
+      border:15px solid $primaryButtonColor;
     }
 
     &.active {
@@ -113,7 +154,7 @@ body {
       filter: none;
 
       .activeBar {
-        background-color: blue;
+        background-color: $primaryButtonColor;
       }
 
 
@@ -192,6 +233,50 @@ body {
     }
   }
 
+  .btn-todo{
+    border: 1px solid white;
+    color: white;
+    width: 200px;
+    margin: 10px;
+
+    &.active{
+      border:none;
+      background-color:$primaryButtonColor;
+
+  }
+  }
+
+  .hire-input{
+    border-top: 0;
+    border-left: 0;
+    background-color: transparent;
+    border-right: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    color: white;
+    height: 78px;
+
+
+    &::placeholder{
+      font-size:20px;
+      color:white;
+    }
+
+    &:focus{
+      outline:none;
+    }
+  }
+  .btn-send{
+    background-color:$primaryButtonColor;
+    font-weight:bold;
+    color:white;
+    margin-top:3rem;
+
+    &:hover{
+      background-color:white;
+      color:black;
+    }
+  }
 
   }
 
